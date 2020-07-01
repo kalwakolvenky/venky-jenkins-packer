@@ -91,7 +91,7 @@ resource "aws_security_group" "allow_all" {
 
 terraform {
   backend "s3" {
-    bucket = "sreeterraformbucket"
+    bucket = "devops-backend"
     key    = "myterraform.tfstate"
     region = "us-east-1"
   }
