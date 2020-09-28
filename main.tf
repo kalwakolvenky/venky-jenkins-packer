@@ -96,7 +96,13 @@ data "aws_ami" "my_ami" {
      #name_regex       = "^mavrick"
      owners           = ["946995831463"]
 }
-
+terraform {
+  backend "s3" {
+    bucket = "devops-backend"
+    key    = "myterraform.tfstate"
+    region = "us-east-1"
+  }
+}
 
 resource "aws_instance" "web-1" {
     ami = "${data.aws_ami.my_ami.id}"
