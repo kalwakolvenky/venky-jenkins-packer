@@ -11,7 +11,7 @@
     "region": "us-east-1",
     "source_ami": " ami-0817d428a6fb68645",
     "instance_type": "t2.nano",
-    "ssh_username": "ec2-user",
+    "ssh_username": "ubuntu",
     "ami_name": "venky-packer-colour",
     "vpc_id": "vpc-021674c5f3e6f6df1",
     "subnet_id": "subnet-078e047340cc7e43f"
